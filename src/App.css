@@ -1,38 +1,53 @@
-.App {
+/* Header, Footer, Main styles */
+.header {
   text-align: center;
+  padding: 1rem;
+  color: #222022;
+  box-shadow: 0px 3px 3px 0px #DDD;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  padding: 2rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer {
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 3rem;
+  color: #FFF;
+  background-color: #4d4d4f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Todo Container and its child styles */
+.todo-container {
+  display: grid;
+  grid-template-rows: 3rem auto auto;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-input {
+  width: 450px;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  border: 1px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-btn {
+  width: 100px;
+  padding: 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #315afc;
+  border: 2px solid #315afc;
+  background-color: #FFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-btn:hover {
+  background-color: #315afc;
+  color: #FFF;
 }
